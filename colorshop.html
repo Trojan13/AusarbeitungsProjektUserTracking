@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tracking Site</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href=" css/myCSS.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Tracking Beispiel</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./colorshop.html">Farben Shop</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" id="usrName" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span>Username</a></li>
+                    <li><a href="#" id="logoutBtn"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Content -->
+
+    <div class="container-fluid">
+        <div class="row">
+        <div class="center-block">
+                <div id="colorbox1" class="mycolorbox"><div class="glyphicon glyphicon-heart likebox"></div></div>
+                <div id="colorbox2" class="mycolorbox"><div class="glyphicon glyphicon-heart likebox"></div></div>
+                <div id="colorbox3" class="mycolorbox"><div class="glyphicon glyphicon-heart likebox"></div></div>
+                <div id="colorbox4" class="mycolorbox"><div class="glyphicon glyphicon-heart likebox"></div></div>
+                <div id="colorbox5" class="mycolorbox"><div class="glyphicon glyphicon-heart likebox"></div></div>
+                <div id="colorbox6" class="mycolorbox"><div class="glyphicon glyphicon-heart likebox"></div></div>
+                <div id="colorbox7" class="mycolorbox"><div class="glyphicon glyphicon-heart likebox"></div></div>
+                <div id="colorbox8" class="mycolorbox"><div class="glyphicon glyphicon-heart likebox"></div></div>
+                <div id="colorbox9" class="mycolorbox"><div class="glyphicon glyphicon-heart likebox"></div></div>
+                <div id="colorbox10" class="mycolorbox"><div class="glyphicon glyphicon-heart likebox"></div></div>
+                <div id="colorbox11" class="mycolorbox"><div class="glyphicon glyphicon-heart likebox"></div></div>
+                <div id="colorbox12" class="mycolorbox"><div class="glyphicon glyphicon-heart likebox"></div></div>
+                <div id="colorbox13" class="mycolorbox"><div class="glyphicon glyphicon-heart likebox"></div></div>
+                <div id="colorbox14" class="mycolorbox"><div class="glyphicon glyphicon-heart likebox"></div></div>
+                <div id="colorbox15" class="mycolorbox"><div class="glyphicon glyphicon-heart likebox"></div></div>
+                <div id="colorbox16" class="mycolorbox"><div class="glyphicon glyphicon-heart likebox"></div></div>
+                <div id="colorbox17" class="mycolorbox"><div class="glyphicon glyphicon-heart likebox"></div></div>
+                <div id="colorbox18" class="mycolorbox"><div class="glyphicon glyphicon-heart likebox"></div></div>
+        </div>
+        </div>
+            <div class="row">
+        <button type="button" class="btn btn-info btn-lg refreshbutton" onclick="location.reload();">
+            <span class="glyphicon glyphicon-refresh"></span> Refresh
+        </button>
+            </div>
+    </div>
+
+
+
+    <!-- container -->
+    <div class="container">
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Benutzer Info</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h4 id="infUsrIP"></h4>
+                        <h4 id="infUsrTimesVisited"></h4>
+                        <h4 id="infUsrLastVisited"></h4>
+                        <h4 id="infUsrPrefColor"></h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Schließen</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- footer -->
+    <div class="footer" >
+        <div class="container">
+            <p class="text-muted">by Tim Pack and Dominik Hertel</p>
+        </div>
+
+    </div>
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Own Javascript file -->
+    <script src="js/TrackingInteractions.js"></script>
+    <script src="js/BrowserData.js"></script>
+</body>
+
+</html>

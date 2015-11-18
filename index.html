@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tracking Site</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href=" css/myCSS.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Tracking Beispiel</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="./index.html">Home<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#lastbrowser">Letzter Browser</a></li>
+                            <li><a href="#browser">Browser</a></li>
+                            <li><a href="#ipinfo">IP</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./colorshop.html">Farben Shop</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" id="usrName" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span>Username</a></li>
+                    <li><a href="#" id="logoutBtn"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="center-block">
+        <div class="row" >
+            <div class="col-lg-10" style="text-align: left;" >
+
+			<h1 id="lastbrowser">Letzter Browser <span style="font-size:14px;color: red;">(cookies)</span></h1>
+                <img id="browserLoadImg1" src="res/ajax-loader.gif" alt="LoadingImg">
+				<h4 id="infCookieSize"></h4>
+				<h4 id="infCookieIP"></h4>
+
+                <h1 id="browser">Browser</h1>
+                <img id="browserLoadImg2" src="res/ajax-loader.gif" alt="LoadingImg">
+				<h4 id="infInnerSize"></h4>
+				<h4 id="infOuterSize"></h4>
+				<h4 id="infCookiesEnabled"></h4>
+				<h4 id="infBrowserEngine"></h4>
+				<h4 id="infBrowserLang"></h4>
+				<h4 id="infColorDepth"></h4>
+				<h4 id="infPixelDepth"></h4>
+                <h4 id="infBrowserName"></h4>
+                <h4 id="infFullVersion"></h4>
+                <h4 id="infMajorVersion"></h4>
+                <h4 id="infAppName"></h4>
+                <h4 id="infUserAgent"></h4>
+
+                <h1 id="ip">IP</h1>
+                <img id="browserLoadImg3" src="res/ajax-loader.gif" alt="LoadingImg">
+                <h4 id="infIP"></h4>
+                <h4 id="infHostname"></h4>
+                <h4 id="infCity"></h4>
+                <h4 id="infRegion"></h4>
+                <h4 id="infCountry"></h4>
+                <h4 id="infLocation"></h4>
+                <h4 id="infNetzwerk"></h4>
+                <img class="map" id="infKarte">
+
+            </div>
+        </div>
+        <!-- /.row -->
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <!-- container -->
+    <div class="container">
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Benutzer Info</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h4 id="infUsrIP"></h4>
+                        <h4 id="infUsrTimesVisited"></h4>
+                        <h4 id="infUsrLastVisited"></h4>
+                        <h4 id="infUsrPrefColor"></h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Schließen</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+	<div class="container">
+        <div class="center-block">
+	<h1 id="about">About</h1>
+	<p>Diese Seite zeigt die meisten für den Browser sichtbaren Eigenschaften des Clients.</p>
+	</div>
+    </div>
+	<!-- footer -->
+	<div class="footer navbar-inverse" >
+        <div class="container">
+            <p class="text-muted">by Tim Pack and Dominik Hertel</p>
+        </div>
+
+	</div>
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Own Javascript file -->
+    <script src="js/BrowserData.js"></script>
+</body>
+
+</html>
