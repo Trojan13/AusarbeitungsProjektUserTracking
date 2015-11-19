@@ -1,5 +1,10 @@
 var ip = "172.0.0.1";
 var d = new Date();
+
+if (!checkCookie()){
+    alert("Cookies werden in dieser Session nicht gepeichert. Große Teile der Webseite funktionieren nicht.");
+} 
+
 if(window.location.href.indexOf("index.html") > -1) {
     getIPInfo();
 } else {
@@ -220,6 +225,15 @@ function getIPInfo(){
     document.getElementById("browserLoadImg3").style.display = "none";
 }
 
+function checkCookies(){
+    setCookie("testcookie","testvalue",365);
+    var cookiecheck =  getCookie("testcookie");
+    if (cookiecheck == "") {
+        return false;
+    } else {
+        return true;
+    }
+}
 
 function setCookie(cname,cvalue,exdays) {
     var d = new Date();
